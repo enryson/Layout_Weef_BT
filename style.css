@@ -2,6 +2,26 @@ header {
     padding-right: 5.6%;
 }
 
+.top-bar {
+    height: 29px;
+    margin-bottom: 30px;
+    background-color: #f5f5f5;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    color: #1a2333;
+}
+
+.p-1 a {
+    margin-left: 18px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    margin-left: 35px;
+    color: #222e41;
+}
+
 .navbar {
     height: 67px;
     margin-left: 5.6%;
@@ -15,29 +35,28 @@ header {
     text-align: center;
 }
 
-a:hover {
-    color: #00aeef !important;
+.dropdown-menu a {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 13px;
 }
 
+a:hover,
 .active {
     color: #00aeef !important;
 }
 
-.top-bar {
-    height: 29px;
-    margin-bottom: 30px;
-    background-color: #f5f5f5;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: normal;
-    font-style: normal;
-    color: #1a2333;
+.carousel {
+    position: absolute;
+    margin-top: 29px;
 }
 
-
-/*
-.nav-item a,
-.nav-item a:visited {
-    color: #fff;
+.container {
+    background-color: #edf3fa
 }
-*/
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 35px;
+    height: 35px;
+}
