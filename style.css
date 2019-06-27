@@ -1,0 +1,43 @@
+header {
+    padding-right: 5.6%;
+}
+
+.navbar {
+    height: 67px;
+    margin-left: 5.6%;
+    margin-right: 5.6%;
+    border-radius: 6px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+}
+
+a:hover {
+    color: #00aeef !important;
+}
+
+.active {
+    color: #00aeef !important;
+}
+
+.top-bar {
+    height: 29px;
+    margin-bottom: 30px;
+    background-color: #f5f5f5;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    color: #1a2333;
+}
+
+
+/*
+.nav-item a,
+.nav-item a:visited {
+    color: #fff;
+}
+*/
