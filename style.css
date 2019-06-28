@@ -40,14 +40,14 @@ header {
 
 .navbar {
     z-index: 10;
-    height: 67px;
-    border-radius: 6px;
+    height: 67px !important;
+    border-radius: 6px !important;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
     font-family: Montserrat !important;
     font-size: 13px !important;
     font-weight: bold !important;
-    text-align: center;
+    text-align: center !important;
 }
 
 .navbar a {
