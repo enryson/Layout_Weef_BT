@@ -1,3 +1,18 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: Montserrat;
+    font-size: 18px;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    height: 100%;
+}
+
 header {
     padding-right: 5.6%;
 }
@@ -23,9 +38,8 @@ header {
 }
 
 .navbar {
+    z-index: 10;
     height: 67px;
-    margin-left: 5.6%;
-    margin-right: 5.6%;
     border-radius: 6px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
@@ -47,16 +61,59 @@ a:hover,
 }
 
 .carousel {
-    position: absolute;
-    margin-top: 29px;
-}
-
-.container {
-    background-color: #edf3fa
+    background-color: #edf3fa;
+    margin-top: -100px;
 }
 
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
+    color: #ffffff;
     width: 35px;
     height: 35px;
+}
+
+.jumbotron {
+    background-color: #edf3fa;
+}
+
+.jumbotron h3 {
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: #131f6b;
+}
+
+.jumbotron p {
+    font-weight: Medium;
+}
+
+#myFooter {
+    background-color: #222a5b;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+
+#myFooter .footer-copyright {
+    background-color: #1c2248;
+    text-align: center;
+    height: 56px;
+}
+
+#myFooter a {
+    color: #ced7e1;
+    text-decoration: none;
+}
+
+#myFooter .social-networks {
+    height: 119px;
 }
