@@ -5,8 +5,6 @@ $(document).ready(function() {
             return response.json();
         })
         .then(function(myJson) {
-            for (var i = 0; i < myJson.length; i++) {
-                $('<div class="card" />').text(myJson[i]).appendTo('#card');
-            }
+            for (var i = 0; i < myJson.length; i++) {}
         });
 });
