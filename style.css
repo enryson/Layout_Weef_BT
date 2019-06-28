@@ -121,7 +121,33 @@ a:hover,
     color: #131f6b;
 }
 
-.pattern {}
+.card {
+    margin-top: 6%;
+    font-family: Montserrat;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #6b737f;
+}
+
+.card-category {
+    font-size: 11px;
+    color: #222e41;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #222e41;
+}
+
+.btn .active {
+    font-family: Montserrat;
+    font-weight: bold;
+    text-align: right;
+    color: #00aeef;
+}
 
 #myFooter {
     background-color: #222a5b;
