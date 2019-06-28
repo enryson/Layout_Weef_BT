@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -109,9 +110,11 @@
                 </div>
 
             </div>
-            <di class="p-4 col-sm-8 mx-auto">
-                <input class="btn btn-primary" type="button" value="Enviar">
-            </di>
+            <div class="container p-4">
+                <div class="p-4 col-sm-8 mx-auto">
+                    <input class="btn btn-primary" type="button" value="Ver Mais">
+                </div>
+            </div>
         </div>
 
         <div class="container cont-form">
@@ -132,12 +135,14 @@
                         <input type="text" class="form-control" placeholder="E-mail">
                     </div>
                     <div class="form-group float-label-control">
-                        <select class="form-control" id="assunto">
+                        <div class="custom-select-wrapper">
+                            <select class="form-control" id="assunto">
                             <option selected disabled hidden>Assunto</option>
                             <option value="">Duvidas</option>
                             <option value="">Orçamento</option>
                             <option value="">Outros</option>
                           </select>
+                        </div>
                     </div>
                     <div class="form-group float-label-control">
                         <textarea class="form-control" placeholder="Mensagem" rows="1"></textarea>

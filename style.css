@@ -189,6 +189,22 @@ a:hover,
     border-radius: 2px;
 }
 
+.custom-select-wrapper {
+    position: relative
+}
+
+.custom-select-wrapper:after {
+    content: "\f078";
+    font-family: "FontAwesome";
+    font-size: 16px;
+    color: #131f6b;
+    right: 8px;
+    top: 4px;
+    padding: 0 0 2px;
+    position: absolute;
+    pointer-events: none;
+}
+
 .form-control {
     color: #a3b0c3 !important;
     border-color: inherit !important;
@@ -201,12 +217,10 @@ input::-webkit-input-placeholder {
 }
 
 input:-moz-placeholder {
-    /* Firefox 18- */
     color: #a3b0c3 !important;
 }
 
 input::-moz-placeholder {
-    /* Firefox 19+ */
     color: #a3b0c3 !important;
 }
 
