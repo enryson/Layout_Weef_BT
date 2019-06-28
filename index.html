@@ -8,14 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css" />
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="theme-form.css">
-    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
-
 </head>
 
 <body>
@@ -111,38 +107,46 @@
                         </di>
                     </div>
                 </div>
-            </div>
 
+            </div>
+            <di class="p-4 col-sm-8 mx-auto">
+                <input class="btn btn-primary" type="button" value="Enviar">
+            </di>
         </div>
 
-        <div class="container">
-            <div class="pattern p-5">
+        <div class="container cont-form">
+            <div class="pattern p-5 mx-auto">
                 <h1 class="font-weight-normal">Deixe seu</h1>
                 <h1 class="font-weight-bold">Feedback</h1>
             </div>
             <div class="col-sm-8 mx-auto">
-                <div>
-                    <h5>Sua opinião é muito importante para nós. Envie opiniões, sugestões ou através do formulário.</h5>
+                <div class="mb-5 font-weight-normal">
+                    <h5>Sua opinião é muito importante para nós.</h5>
                     <h6> Envie opiniões, sugestões ou através do formulário.</h6>
                 </div>
                 <form role="form">
                     <div class="form-group float-label-control">
-                        <label for="">Nome</label>
                         <input type="text" class="form-control" placeholder="Nome">
                     </div>
                     <div class="form-group float-label-control">
-                        <label for="">E-mail</label>
                         <input type="text" class="form-control" placeholder="E-mail">
                     </div>
                     <div class="form-group float-label-control">
-                        <label for="">Assunto</label>
-                        <select class="form-control">
+                        <select class="form-control" id="assunto">
+                            <option selected disabled hidden>Assunto</option>
+                            <option value="">Duvidas</option>
+                            <option value="">Orçamento</option>
+                            <option value="">Outros</option>
+                          </select>
                     </div>
                     <div class="form-group float-label-control">
-                        <label for="">Mensagem</label>
                         <textarea class="form-control" placeholder="Mensagem" rows="1"></textarea>
                     </div>
-                </form>    
+                    <di class="float-right">
+                        <input class="btn btn-primary" type="button" value="Enviar">
+                    </di>
+
+                </form>
             </div>
         </div>
 
@@ -167,7 +171,7 @@
             </div>
         </div>
 
-        
+
         <div class="footer-copyright p-4">
             <div class="container">
                 <div class="d-flex justify-content-between">
@@ -188,6 +192,8 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
 
 <script type="text/javascript " src="//code.jquery.com/jquery-1.11.0.min.js "></script>
 <script type="text/javascript " src="//code.jquery.com/jquery-migrate-1.2.1.min.js "></script>
@@ -195,7 +201,6 @@
 <script type="text/javascript " src="/theme-form.js"></script>
 
 <script src="/masonry/masonry.pkgd.js"></script>
-<!-- or -->
 <script src="/masonry/masonry.pkgd.min.js"></script>
 
 </html
