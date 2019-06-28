@@ -34,7 +34,7 @@ function fetchCards() {
             return response.json();
         })
         .then(function(myJson) {
-            for (var i = 0; i < myJson.length; i++) {
+            for (var i = 0; i < myJson.length - 1; i++) {
                 $("#cards").append($(
                     '<div class="card" style="width: 22rem;">' +
                     '<img class="card-img-top" src="' + myJson[i].image.src + '">' +
