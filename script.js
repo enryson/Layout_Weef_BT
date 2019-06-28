@@ -1,5 +1,6 @@
 $(document).ready(function() {
     fetchCarroucel();
+    fetchCards();
 });
 
 function fetchCarroucel() {
@@ -22,6 +23,28 @@ function fetchCarroucel() {
                     '<h1>' + myJson[i].title + '</h1>' +
                     '<h4>' + myJson[i].subtitle + '</h4>' +
                     '<p>' + myJson[i].excerpt + '</p>' + "</div> </div>"));
+            }
+        });
+}
+
+
+function fetchCards() {
+    fetch('https://teste.teste404.com.br/weef/blog.json')
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(myJson) {
+            for (var i = 0; i < myJson.length; i++) {
+                $("#cards").append($(
+                    '<div class="card" style="width: 22rem;">' +
+                    '<img class="card-img-top" src="' + myJson[i].image.src + '">' +
+                    '<div class="card-body">' +
+                    '<h6 class="card-category text-uppercase">' + myJson[i].category + '</h6>' +
+                    '<h4 class="card-title">' + myJson[i].title + '</h4>' +
+                    '<p class="card-text">' + myJson[i].excerpt + '</p>' +
+                    '<div class="text-right">' +
+                    '<a href="#" class="btn active">Acessar</a>' +
+                    "</div> </div> </div>"));
             }
         });
 }
