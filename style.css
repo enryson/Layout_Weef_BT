@@ -18,6 +18,7 @@ header {
 }
 
 .top-bar {
+    margin-right: -6%;
     height: 29px;
     margin-bottom: 30px;
     background-color: #f5f5f5;
@@ -65,6 +66,31 @@ a:hover,
     margin-top: -100px;
 }
 
+.carousel-content {
+    font-family: Montserrat;
+    position: absolute;
+    top: 35%;
+    left: 13%;
+    z-index: 20;
+    color: #131f6b;
+    width: 31%;
+}
+
+.carousel-content h1 {
+    font-weight: bold;
+    font-size: 42px;
+}
+
+.carousel-content h4 {
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.carousel-content p {
+    font-weight: normal;
+    font-size: 16px;
+}
+
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
     color: #ffffff;
@@ -91,6 +117,12 @@ a:hover,
     font-weight: Medium;
 }
 
+.container h1 {
+    color: #131f6b;
+}
+
+.pattern {}
+
 #myFooter {
     background-color: #222a5b;
     font-family: Montserrat;
@@ -105,15 +137,10 @@ a:hover,
 
 #myFooter .footer-copyright {
     background-color: #1c2248;
-    text-align: center;
-    height: 56px;
-}
-
-#myFooter a {
-    color: #ced7e1;
-    text-decoration: none;
 }
 
 #myFooter .social-networks {
     height: 119px;
 }
+
+body {}
