@@ -62,8 +62,14 @@ header {
     font-size: 13px;
 }
 
+a:active,
+a:link,
 a:hover,
-.active {
+.text-right {
+    color: #00aeef !important;
+}
+
+.text-right a:visited {
     color: #00aeef !important;
 }
 
@@ -105,6 +111,10 @@ a:hover,
 }
 
 .jumbotron {
+    background-color: white;
+}
+
+.j3 {
     background-color: #edf3fa;
 }
 
@@ -151,30 +161,30 @@ a:hover,
 
 .card {
     margin-top: 6%;
-    font-family: Montserrat;
+    font-family: Montserrat !important;
 }
 
 .card-text {
-    font-size: 14px;
+    font-size: 14px !important;
     color: #6b737f;
 }
 
 .card-category {
-    font-size: 11px;
+    font-size: 11px !important;
     color: #222e41;
 }
 
 .card-title {
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 18px !important;
+    font-weight: bold !important;
     color: #222e41;
 }
 
-.btn .active {
-    font-family: Montserrat;
-    font-weight: bold;
-    text-align: right;
-    color: #00aeef;
+.btn.active {
+    font-family: Montserrat !important;
+    font-weight: bold !important;
+    color: #00aeef !important;
+    background-color: transparent;
 }
 
 .btn-primary.custom-file-control::before,
@@ -206,10 +216,14 @@ a:hover,
 }
 
 .form-control {
-    color: #a3b0c3 !important;
+    color: #222e41 !important;
     border-color: inherit !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
+}
+
+#assunto {
+    color: #a3b0c3 !important;
 }
 
 input::-webkit-input-placeholder {
@@ -257,4 +271,12 @@ textarea::placeholder {
 
 #myFooter .social-networks {
     height: 119px;
+}
+
+.grid-item {
+    width: 200px;
+}
+
+.grid-item--width2 {
+    width: 400px;
 }
