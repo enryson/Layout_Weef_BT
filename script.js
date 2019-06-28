@@ -5,6 +5,15 @@ $(document).ready(function() {
             return response.json();
         })
         .then(function(myJson) {
-            for (var i = 0; i < myJson.length; i++) {}
+            for (var i = 0; i < myJson.length; i++) {
+                console.log(myJson[i].image.src);
+                $(".carousel-inner").append($('<div class="carousel-item">' +
+                    '<img class="d-block w-100" src="/img/bg.png" alt="First slide">' +
+                    '<div class="carousel-content">' +
+                    '<h1>' + myJson[i].title + '</h1>' +
+                    '<h4>' + myJson[i].subtitle + '</h4>' +
+                    '<p>' + myJson[i].excerpt + '</p>'));
+
+            }
         });
 });
