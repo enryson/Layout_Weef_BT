@@ -1,6 +1,7 @@
 $(document).ready(function() {
     fetchCarroucel();
     fetchCards();
+
 });
 
 function fetchCarroucel() {
@@ -19,7 +20,7 @@ function fetchCarroucel() {
                     activeVar = "";
                 $(".carousel-inner").append($('<div class="carousel-item' + activeVar + '">' +
                     '<img class="d-block w-100" src="/img/bg.png">' +
-                    '<div class="carousel-content">' +
+                    '<div class="carousel-content col-lg-3 col-md-6 col-sm-12 col-xs-12">' +
                     '<h1>' + myJson[i].title + '</h1>' +
                     '<h4>' + myJson[i].subtitle + '</h4>' +
                     '<p>' + myJson[i].excerpt + '</p>' + "</div> </div>"));
@@ -36,7 +37,7 @@ function fetchCards() {
         .then(function(myJson) {
             for (var i = 0; i < myJson.length - 1; i++) {
                 $("#cards").append($(
-                    '<div class="card" style="width: 22rem;">' +
+                    '<div class="card col-sm-12 " style="width: 22rem;">' +
                     '<img class="card-img-top" src="' + myJson[i].image.src + '">' +
                     '<div class="card-body">' +
                     '<h6 class="card-category text-uppercase">' + myJson[i].category + '</h6>' +
