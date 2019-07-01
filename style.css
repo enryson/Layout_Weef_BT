@@ -35,7 +35,11 @@ header {
 
 .navbar-light .navbar-nav .nav-link {
     margin-left: 35px;
-    color: #222e41;
+    background-color: #ffffff !important;
+}
+
+.navbarSupportedContent {
+    background-color:
 }
 
 .navbar {
@@ -111,7 +115,7 @@ a:hover,
 }
 
 .jumbotron {
-    background-color: white;
+    background-color: transparent;
 }
 
 .j3 {
@@ -277,10 +281,18 @@ textarea::placeholder {
     height: 119px;
 }
 
-.grid-item {
-    width: 200px;
+.pattern {
+    position: absolute;
+    margin-left: -20%;
+    margin-top: -3%;
+    background-color: transparent;
+    background-image: radial-gradient(#72a530 5%, transparent 1%);
+    background-size: 20px 20px;
+    background-position: 0 0, 80px 80px;
+    width: 45%;
+    height: 7%;
 }
 
-.grid-item--width2 {
-    width: 400px;
+#form {
+    z-index: 0;
 }
