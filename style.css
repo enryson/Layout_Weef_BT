@@ -327,7 +327,3 @@ textarea::placeholder {
 .button-card {
     margin-top: 8%;
 }
-
-.dot-text {
-    z-index: 1000;
-}
