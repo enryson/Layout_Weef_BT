@@ -20,7 +20,7 @@ function fetchCarroucel() {
                     activeVar = "";
                 $(".carousel-inner").append($('<div class="carousel-item' + activeVar + '">' +
                     '<img class="d-block w-100" src="/img/bg.png">' +
-                    '<div class="carousel-content col-lg-3 col-md-6 col-sm-12 col-xs-12">' +
+                    '<div class="carousel-content">' +
                     '<h1>' + myJson[i].title + '</h1>' +
                     '<h4>' + myJson[i].subtitle + '</h4>' +
                     '<p>' + myJson[i].excerpt + '</p>' + "</div> </div>"));
